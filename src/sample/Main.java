@@ -16,7 +16,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
         // variables
         String Message = "Welcome to CSC 202 Labs";
         System.out.println(Message);
