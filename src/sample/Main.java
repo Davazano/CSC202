@@ -10,27 +10,28 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sun.rmi.runtime.Log;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //Creating a Text object
-        Text text = new Text();
+        System.out.println("Variables");
 
-        //Setting font to the text
-        text.setFont(Font.font("verdana", FontWeight.BOLD, FontPosture.REGULAR, 20));
+        // variables
+        int age = 16;
+        System.out.println("age: ");
+        System.out.println(age);
 
-        //setting the position of the text
-        text.setX(50);
-        text.setY(130);
+        double pi = 3.14;
+        System.out.println("PI: ");
+        System.out.println(pi);
 
-        //Setting the text to be added.
-        text.setText("Hi, Welcome to JavaFx!");
+        char grade = 'A';
+        System.out.println("Grade: ");
+        System.out.println(grade);
 
-        //Creating a Group object
-        Group root = new Group(text);
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 400, 275));
         primaryStage.show();
