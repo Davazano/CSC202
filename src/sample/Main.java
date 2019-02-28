@@ -19,17 +19,50 @@ public class Main extends Application {
         System.out.println("Variables");
 
         // variables
-        int age = 16;
-        System.out.println("age: ");
-        System.out.println(age);
+        int a = 100;
+        System.out.println("a: ");
+        System.out.println(a);
 
-        double pi = 3.14;
-        System.out.println("PI: ");
-        System.out.println(pi);
+        int b = 200;
+        System.out.println("b: ");
+        System.out.println(b);
 
-        char grade = 'A';
-        System.out.println("Grade: ");
-        System.out.println(grade);
+        /*
+        // Addition
+        int sum = b + a;
+        System.out.println("sum: b + a");
+        System.out.println(sum);
+
+        // Subtraction
+        int diff = b - a;
+        System.out.println("diff: b - a =");
+        System.out.println(diff);
+
+        // Multiplication
+        int mult = b * a;
+        System.out.println("mult: b * a =");
+        System.out.println(mult);
+
+        // Division
+        int div = b / a;
+        System.out.println("div: b / a =");
+        System.out.println(div);
+
+        // Modulus
+        int mod = b % a;
+        System.out.println("mod: b % a =");
+        System.out.println(mod);
+*/
+        // Increment
+        int inc = ++b;
+        System.out.println("inc: ++b =");
+        System.out.println(inc);
+/*
+        // Decrement
+        int dec = --b;
+        System.out.println("dec: --b =");
+        System.out.println(dec);
+        */
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
