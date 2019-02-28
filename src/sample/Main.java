@@ -16,53 +16,23 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        System.out.println("Variables");
 
         // variables
-        int a = 100;
-        System.out.println("a: ");
-        System.out.println(a);
+        String Message = "Welcome to CSC 202 Labs";
+        System.out.println(Message);
 
-        int b = 200;
-        System.out.println("b: ");
-        System.out.println(b);
+        String Name = "Dave";
 
-        /*
-        // Addition
-        int sum = b + a;
-        System.out.println("sum: b + a");
-        System.out.println(sum);
+        int Age = 45;
 
-        // Subtraction
-        int diff = b - a;
-        System.out.println("diff: b - a =");
-        System.out.println(diff);
+        String Sentence ="My name is ".concat("Adam");
+        System.out.println(Sentence);
 
-        // Multiplication
-        int mult = b * a;
-        System.out.println("mult: b * a =");
-        System.out.println(mult);
+        String AgeSentence = "I am ".concat(String.valueOf(Age)).concat(" years old");
+        System.out.println(AgeSentence);
 
-        // Division
-        int div = b / a;
-        System.out.println("div: b / a =");
-        System.out.println(div);
-
-        // Modulus
-        int mod = b % a;
-        System.out.println("mod: b % a =");
-        System.out.println(mod);
-*/
-        // Increment
-        int inc = ++b;
-        System.out.println("inc: ++b =");
-        System.out.println(inc);
-/*
-        // Decrement
-        int dec = --b;
-        System.out.println("dec: --b =");
-        System.out.println(dec);
-        */
+        String NameSentence = "My name is ".concat(Name);
+        System.out.println(NameSentence);
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
