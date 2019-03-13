@@ -16,24 +16,49 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        // variables
-        String Message = "Welcome to CSC 202 Labs";
-        System.out.println(Message);
+        Animal dog = new Animal();
+        //dog.Type = "Mammal";
 
-        String Name = "Dave";
+        Cat[] cats = new Cat[5];
 
-        int Age = 45;
+        cats[0] = new Cat();
+        cats[0].Type = "Black Cat";
 
-        String Sentence ="My name is ".concat("Adam");
-        System.out.println(Sentence);
+        cats[1] = new Cat();
+        cats[1].Type = "White Cat";
 
-        String AgeSentence = "I am ".concat(String.valueOf(Age)).concat(" years old");
-        System.out.println(AgeSentence);
+        cats[2] = new Cat();
+        cats[2].Type = "Brown Cat";
 
-        String NameSentence = "My name is ".concat(Name);
-        System.out.println(NameSentence);
 
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        cats[3] = new Cat();
+        cats[3].Type = "Brown and White Cat";
+
+        //Creating a Text object
+        Text text = new Text();
+
+        //Setting font to the text
+        text.setFont(Font.font("verdana", FontWeight.BOLD, FontPosture.REGULAR, 20));
+
+        //setting the position of the text
+        text.setX(50);
+        text.setY(130);
+
+
+       //text.setText(book1.getTitle() + " " +book1.getPrice().toString() + " " +book1.getAuthor());
+        text.setText(cats[0].Type);
+
+        String [] fruits = {"Apple", "Banana", "Guava", "Orange"};
+
+        for( String fruit : fruits ) {
+            System.out.print( fruit );
+            System.out.print(",");
+        }
+
+
+
+        Group root = new Group(text);
+        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 400, 275));
         primaryStage.show();
